@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/branco"
+    >
+
+        <EditText
+            android:id="@+id/etItemEnderecoParticipante"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_participant"
+            android:hint="Endereço"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:selectAllOnFocus="true"
+            android:singleLine="false"
+            android:textColor="@color/preto"
+            android:textColorHint="@color/letraClara"
+            android:textSize="22sp" />
+
+</androidx.cardview.widget.CardView>

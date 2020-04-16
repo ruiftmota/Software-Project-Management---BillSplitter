@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#212121</color>
+    <color name="colorPrimaryDark">#2b2b2b</color>
+    <color name="colorAccent">#1c53ec</color>
+    <color name="colorDisable">#6D1C53EC</color>
+    <color name="letraClara">#b0b0b0</color>
+    <color name="preto">#000000</color>
+    <color name="contorno_cinza">#bdbdbd</color>
+    <color name="branco">#ffffff</color>
+    <color name="azul_claro">#EBEFF9</color>
+</resources>

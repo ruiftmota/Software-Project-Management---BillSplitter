@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azul_claro"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".ui.registo.RegistoActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/etRegistoFirstName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/edit_text"
+            android:hint="@string/primeiro_nome"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:selectAllOnFocus="true"
+            android:singleLine="false"
+            android:textColor="@color/preto"
+
+            android:textColorHint="@color/letraClara"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.15" />
+
+
+    <EditText
+        android:id="@+id/etRegistoLastName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/edit_text"
+        android:hint="Ultimo Nome"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:selectAllOnFocus="true"
+        android:singleLine="false"
+
+        android:textColor="@color/preto"
+        android:textColorHint="@color/letraClara"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etRegistoFirstName" />
+
+    <EditText
+        android:id="@+id/etRegistoEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/edit_text"
+        android:hint="@string/prompt_email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:selectAllOnFocus="true"
+        android:singleLine="false"
+        android:textColor="@color/preto"
+        android:textColorHint="@color/letraClara"
+
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.093"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etRegistoLastName" />
+
+    <EditText
+        android:id="@+id/etRegistoPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/edit_text"
+        android:hint="@string/prompt_password"
+        android:imeActionLabel="@string/registar"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:maxLength="16"
+        android:padding="10dp"
+        android:selectAllOnFocus="true"
+        android:textColor="@color/preto"
+        android:textColorHint="@color/letraClara"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.093"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etRegistoEmail" />
+
+    <EditText
+        android:id="@+id/etConfirmPass"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/edit_text"
+        android:hint="@string/verificar_senha"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:selectAllOnFocus="true"
+        android:singleLine="false"
+
+        android:textColor="@color/preto"
+        android:textColorHint="@color/letraClara"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etRegistoPassword" />
+
+        <Button
+            android:id="@+id/btnRegisto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/button_disable"
+            android:enabled="false"
+            android:paddingLeft="50dp"
+            android:paddingTop="10dp"
+            android:paddingRight="50dp"
+            android:paddingBottom="10dp"
+            android:text="@string/registar"
+            android:textColor="@color/branco"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etConfirmPass" />
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="0dp"
+        android:layout_height="31dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="64dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/etRegistoPassword"
+        app:layout_constraintStart_toStartOf="@+id/etRegistoPassword"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+
+
+        <Button
+
+            android:id="@+id/btnRegistoEntrar"
+            android:layout_width="152dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:background="@drawable/button_style"
+            android:onClick="jaTemConta"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/entrar"
+            android:textColor="@color/branco"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnRegisto" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:text="@string/ja_tens_conta"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegistoEntrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

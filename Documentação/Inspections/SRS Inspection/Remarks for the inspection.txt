@@ -1,0 +1,33 @@
+--------------------------------------------- REMARKS FOR THE INSPECTION -----------------------------------------------
+
+Line 55: "Our system aims to help their users" --> Our system aims to help ITS users
+
+UC-01: "User not sign up" --> User not SIGNED up
+       "password given" --> given password
+       "email account given" --> given email account
+
+UC-02: "A user logins in the system." --> A user LOGS IN the system.
+
+UC-04: "The software show all difficulty levels." --> The software SHOWS all difficulty levels.
+
+UC-08: "de database" --> THE database
+       "The software informs the user that unlimited game saving slots are a paid feature in our game." --> it was never mentioned in the V&S that there would be a paid feature in the game
+
+UC-10: "The user corrects our erases the cell" --> The user corrects OR erases the cell
+
+FR-01: Requirements with some gramatic errors an harder to understand
+
+FR-02: "consequently giving up." --> CONSEQUENTLY
+
+FR-05: "the users relation" --> the USER'S relation
+       "an email account valid" --> a valid email account
+
+FR-06: "is made by the hand of the user" --> is made manually by the user
+       "verifying this inputs too" --> verifying THOSE inputs
+
+FR-08: "Only if the match is successful does the user continue to a logged in state." --> The user becomes logged in, only if the match was successful
+
+NFR-01: "with it response to any user input." --> with ITS response to any user input.
+
+NFR-02: "The application is quick to respond" --> the application is quick RESPONDING
+

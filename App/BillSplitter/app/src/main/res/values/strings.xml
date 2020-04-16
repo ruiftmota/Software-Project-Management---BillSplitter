@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">BillSplitter</string>
+
+    <!-- Login & Register -->
+    <string name="prompt_email">Endereço</string>
+    <string name="prompt_password">Senha</string>
+    <string name="action_sign_in">Entrar</string>
+    <string name="invalid_email">Endereço inválido</string>
+    <string name="invalid_username">Nome deve possuir no máximo 12 carateres</string>
+    <string name="invalid_password_lenght">Senha deve ter pelo menos 8 carateres</string>
+    <string name="invalid_password_content">Senha deve conter pelo menos um carater extra-alfanumérico</string>
+    <string name="invalid_password_white_space">Senha não deve conter espaços em branco</string>
+    <string name="invalid_confirm_password">Senhas não condizem</string>
+    <string name="entrar">Entrar</string>
+    <string name="registar">Registar</string>
+    <string name="ja_tens_conta">Já tens conta?</string>
+    <string name="verificar_senha">Verificar Senha</string>
+    <string name="ainda_n_o_tens_conta">Ainda não tens conta?</string>
+    <string name="nova_conta">Nova conta</string>
+    <string name="primeiro_nome">Primeiro Nome</string>
+
+    <!-- Login & Register Result -->
+    <string name="authentication">"Erro de conexão"</string>
+    <string name="invalid_password">"Email ou Senha inválidos"</string>
+
+
+    <!-- Event creation -->
+    <string name="create_failed">"Erro ao criar evento"</string>
+    <string name="confirmar_evento">Confirmar</string>
+    <string name="sem_campo">Campo por preencher</string>
+
+    <!-- Empty Event List -->
+    <string name="sem_evento">De momento não estás \n em nenhum evento!</string>
+
+
+    <!-- Dialog strings -->
+    <string name="dialog_delete_title">Apagar evento</string>
+    <string name="dialog_publish_title">Bloquear alterações</string>
+    <string name="dialog_description">Esta ação é irreversível.\nTem a certeza que deseja continuar?</string>
+</resources>
